@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.rvc.student.restaurantreminder.MainActivity">
+
+    <TextView
+        android:id="@+id/txtViewTitle"
+        android:layout_width="352dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="18dp"
+        android:text="Enter the name of the restaurant, and give it a rating"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintEnd_toEndOf="@+id/txtRestName"
+        app:layout_constraintStart_toStartOf="@+id/txtRestName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtRestName"
+        android:layout_width="352dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="9dp"
+        android:ems="10"
+        android:hint="Enter restaruant"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewTitle" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="244dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="11dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewRating" />
+
+    <TextView
+        android:id="@+id/txtViewRating"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:text="Give the restaurant a rating based on the food and your experience."
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtRestName" />
+
+    <Button
+        android:id="@+id/btnPastRest"
+        android:layout_width="167dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="108dp"
+        android:layout_marginStart="109dp"
+        android:layout_marginTop="10dp"
+        android:text="Past Restaurants"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewInfo" />
+
+    <Button
+        android:id="@+id/btnRandom"
+        android:layout_width="167dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="108dp"
+        android:layout_marginStart="109dp"
+        android:layout_marginTop="7dp"
+        android:text="Random Restaurant picker"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtRandomShow" />
+
+    <TextView
+        android:id="@+id/txtRandomShow"
+        android:layout_width="245dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="69dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPastRest" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="113dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="135dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="10dp"
+        android:text="Submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
+
+    <TextView
+        android:id="@+id/txtViewInfo"
+        android:layout_width="362dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="8dp"
+        android:text="Past Restaurants will show you all the restaurants you have rated. Random restaurant picker will choose a restaurant to go to based off your 4 or 5 star ratings."
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSubmit" />
+</android.support.constraint.ConstraintLayout>
